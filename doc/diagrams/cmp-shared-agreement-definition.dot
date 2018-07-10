@@ -1,0 +1,12 @@
+digraph {
+" " [shape="point" ]
+" " -> "Agreement Definitions" [ label = "1" ]
+"Agreement Definitions" -> "Agreement Records" [label= "3"]
+"Agreement Definitions" -> "Salesforce" [label = "4"]
+"Agreement Definitions" -> "User Needs Q&A Tasks" [label= "7"]
+"Agreement Definitions" -> "Documents" [label= "2"]
+"Agreement Definitions" -> "DPS" [label= "5"]
+"Agreement Definitions" -> "Agreement specific service" [label= "6"]
+
+
+}
