@@ -1,0 +1,12 @@
+#!/bin/bash
+set -e
+eval "$($(dirname $0)/config)"
+pushd $doc_dir/diagrams
+for f in `find . -ipath "*.dot"`
+do
+	j=../images/`echo $f | perl -pe 's|\.dot$|.jpg|'`
+	mkdir -p "$(dirname "$j")"
+	echo "converting dot file $f to jpeg $j"
+	dot -Tjpeg $f > $j
+done
+popd
