@@ -30,7 +30,7 @@ As defined below, in line with technology strategy, common CMP components will b
 - use a common store for questions and answer tasks for framework buyer needs 
 - use the same languages and frameworks wherever practicable
 
-![Overall architecture](CMP applications high level architecture.jpg)
+![Overall architecture](../images/CMP%20applications%20high%20level%20architecture.jpg)
 
 ## Consequences
 
