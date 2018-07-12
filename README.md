@@ -7,9 +7,6 @@ CCS will record here all architecture decision records:
 Project specific records can be stored in a separate repository. See, for instance, 
 [DataSubmissionService-ADRs](https://github.com/Crown-Commercial-Service/DataSubmissionService-ADRs).
 
-Non sensitive records :(which are preferred) are stored in the 
-[sinsitive ADR repository](https://github.com/Crown-Commercial-Service/CCS-Architecture-Decision-Records-Sensitive)
-
 ## Process
 
 1. All Architecture decision records that are considered sensitive should be mastered here. 
