@@ -1,5 +1,5 @@
 # CCS-Architecture-Decision-Records
-CCS will record here all architecture decision records:
+CCS will record here all **[architecture decision records](doc/adr)**:
  - that need to be agreed at TDDA 
  - that apply to more than one project
  - where those decisions are _not_ considered sensitive 
