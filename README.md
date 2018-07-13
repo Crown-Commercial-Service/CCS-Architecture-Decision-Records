@@ -9,8 +9,8 @@ Project specific records can be stored in a separate repository. See, for instan
 
 ## Process
 
-1. All Architecture decision records that are considered sensitive should be mastered here. 
-1. records should be marked ADR-XXXX-\<name>
+1. All Architecture decision records that are _not_ considered sensitive should be mastered here. 
+1. records should be named ADR-XXXX-\<name>.md
 1. Some diagrams are stored in .dot file format - they need to be converted to `jpg` format.
 
 ## Structure
