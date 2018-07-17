@@ -10,7 +10,7 @@ Accepted
 
 Architectural Decision 003 Use a common records layer decides to use a common records layer. Common Sourcing design defines how to interact various components in a coordinated sourcing strategy.
 
-Apprenticeships needs party and agreement records to coordinate supplier registration and DPS qualification with the buyer journey.
+All Agreement services need party and agreement records to coordinate supplier registration and DPS qualification with the buyer journey.
 
 ## Decision
 
@@ -29,7 +29,7 @@ The agreement and Party APIs have not been defined yet but will use json over HT
 
 Agreement records will contain:
 
-- Agreements, including the Apprenticeship agreement and lot structure, items (services) and related content, and call-offs
+- Agreements, lot structure, items (services) and related content, and call-offs
 - Interests linking suppliers (by ID) to Agreements and their offers
 - Offers from Suppliers linked to the relevant part of agreements services
 - Purchase orders where appropriate
@@ -47,5 +47,5 @@ Individual data, where needed, will be stored as user ID references to CCS ID on
 ## Consequences
 
 - These records need to have been put in place
-- Agreement records API and Agreement repository must be extended to support Apprenticeships
-- Party records API must be extended to support Apprenticeships
+- Agreement records API and Agreement repository must be built to support agreement services
+- Party records API must be built to support agreement services
