@@ -22,7 +22,7 @@ The structure of all agreements will be defined in a common CCS GitHub repositor
 
 The structure of the data is yet to be defined but will map to OCDS standards wherever practical. It will include _elements like_:
 
-- Apprenticeship Agreement schema
+- Agreement schema
     - Lot structure
       - Service items
         - descriptions for buyers
@@ -32,7 +32,7 @@ The structure of the data is yet to be defined but will map to OCDS standards wh
     - links to supporting Documents (in S3)
     - supporting content
     - relevant tasks and Q&A text
-    - Interests  (links supplier offer to apprenticeships
+    - Interests  (links supplier offer to agreement)
         -Supplier Offers
           -(service, offer details)
 
@@ -42,7 +42,7 @@ We will probably use a data schema like format, such as yaml.
 
 ![flow of defeinitions changes](../images/cmp-shared-agreement-definition.jpg)
 
- 1. edit a new version of    Apprenticeships Agreement -  e.g. new services
+ 1. edit a new version of Agreement -  e.g. new services
  2. add / link new related attachments
  3. update Agreement API
  4. update SalesForce content / pages
