@@ -72,6 +72,9 @@ across CCS services
 ## Security
 - Closely follow [NCSC Cloud Security Policy](https://www.ncsc.gov.uk/guidance/implementing-cloud-security-principles)
 - Closely follow [NCSC Bulk Data Policy](https://www.ncsc.gov.uk/guidance/protecting-bulk-personal-data-main)
+## Discovery and Config
+- Use DNS for service discovery 
+- Environment specific config via Terraform environment variables
 
 ## Availability features
 - implement bulkhead and circuit breaker patterns in Docker containers
