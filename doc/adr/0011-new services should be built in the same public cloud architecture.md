@@ -1,6 +1,13 @@
-#1 11- All new services should be built in the same Cloud Architecture 
+# 11. All new services should be built in the same Cloud Architecture 
 
-#2 Context
+Date: 2018-07-23
+
+## Status
+
+Accepted
+
+## Context
+
 
 CCS are  building 5 new services for Crown Marketplace (CMp) over the next few months and each
 will need to decide on a range of cloud technologies.
