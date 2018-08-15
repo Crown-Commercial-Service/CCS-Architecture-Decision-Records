@@ -1,4 +1,4 @@
-# 5. Use version control, trunk based development and ocntinuous integration
+# 5. Use version control, trunk based development and continuous integration
 
 Date: 2018-07-10
 
