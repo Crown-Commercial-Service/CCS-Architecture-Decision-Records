@@ -1,4 +1,4 @@
-# 11. All new services should be built in the same Cloud Architecture 
+# 11. Use the same cloud architecture
 
 Date: 2018-07-23
 
@@ -7,7 +7,6 @@ Date: 2018-07-23
 Accepted
 
 ## Context
-
 
 CCS are  building 5 new services for Crown Marketplace (CMp) over the next few months and each
 will need to decide on a range of cloud technologies.
@@ -28,28 +27,28 @@ There are a number of more detailed decisions that need to be made on how to bui
 
 DigiTS and CCS ID both use Spring Boot and are packaged/deployed with AWS Elastic Beanstalk.
 
-Data Submission Service is built with Ruby on Rails, deployed with Terraform scripted infrastructure into AWS Elastic 
+Data Submission Service is built with Ruby on Rails, deployed with Terraform scripted infrastructure into AWS Elastic
 Container Service Docker containers, and some Lambda functions.
 
-Digital Marketplace is built with Python Flask into Docker containers, deployed to GOV.UK PaaS using CloudFoundry, with 
+Digital Marketplace is built with Python Flask into Docker containers, deployed to GOV.UK PaaS using CloudFoundry, with
 additional components deployed using Terraform.
 
 
 ## Goals
 
 - All services should use the same Identity & Access Management (IAM) strategy and user accounts hierarchy
-   - Properly discriminate between service operator roles, service admin roles, infrastructure roles, security 
+   - Properly discriminate between service operator roles, service admin roles, infrastructure roles, security
      policies and zones, and application roles
    - Same approach to administration accounts
    - Possibly different accounts per framework for some roles
-- All services should use the same consolidated billing 
+- All services should use the same consolidated billing
 - Identify (tag) resources so they can be differentiated by service
 - Use a consistent logging strategy such that logs can be aggregated across services
 - Use a consistent monitoring strategy such that incidents can be monitored across services
-- All services should use the same infrastructure deployment technology 
+- All services should use the same infrastructure deployment technology
 - All services should comply with the same zoning strategy
 - It is easy to create dev and test environments
-- All services that integrate must be built and integration tested together 
+- All services that integrate must be built and integration tested together
 
 Assuming a REST based microservice strategy, and complying with CCS technology strategy.
 
@@ -80,7 +79,7 @@ across CCS services
 - Closely follow [NCSC Cloud Security Policy](https://www.ncsc.gov.uk/guidance/implementing-cloud-security-principles)
 - Closely follow [NCSC Bulk Data Policy](https://www.ncsc.gov.uk/guidance/protecting-bulk-personal-data-main)
 ## Discovery and Config
-- Use DNS for service discovery 
+- Use DNS for service discovery
 - Environment specific config via Terraform environment variables
 
 ## Availability features
@@ -90,12 +89,11 @@ across CCS services
 - design for multiple availability zones
 - (Possble exception -- exception - Gluu is scaled via EC2 manually and may not be Containerisable
 
-## Logging 
+## Logging
 Use CloudWatch for AWS resource monitoring
 Use common log format
 Use transaction tracing through service calls
-Use CloudWatch Logs for log aggregation 
+Use CloudWatch Logs for log aggregation
 
 ## Resource management
 Label resources according to a documented tagging model, with tags for layer, service, and where applicable, owning business area.
-
