@@ -1,15 +1,15 @@
 # CCS-Architecture-Decision-Records
 CCS will record here all **[architecture decision records](doc/adr)**:
- - that need to be agreed at TDDA 
+ - that need to be agreed at TDDA
  - that apply to more than one project
- - where those decisions are _not_ considered sensitive 
+ - where those decisions are _not_ considered sensitive
 
-Project specific records can be stored in a separate repository. See, for instance, 
+Project specific records can be stored in a separate repository. See, for instance,
 [DataSubmissionService-ADRs](https://github.com/Crown-Commercial-Service/DataSubmissionService-ADRs).
 
 ## Process
 
-1. All Architecture decision records that are _not_ considered sensitive should be mastered here. 
+1. All Architecture decision records that are _not_ considered sensitive should be mastered here.
 1. records should be named ADR-XXXX-\<name>.md
 1. Some diagrams are stored in .dot file format - they need to be converted to `jpg` format.
 
@@ -23,7 +23,20 @@ Project specific records can be stored in a separate repository. See, for instan
 
 ### Diagrams
 
-As an experiment we will store some diagrams in [.dot](https://www.graphviz.org/documentation/) language. 
+As an experiment we will store some diagrams in [.dot](https://www.graphviz.org/documentation/) language.
 That allows us to change control diagrams. But it adds a generation stage which we can incorporate into our build pipeline.
 Until then we can generate the files via command lines or web tools.
 
+## Decisions
+
+* [1. use a common cloud provider](adr/doc/0001-use-a-common-cloud-provider.md)
+* [2. Use a consistent user experience](adr/doc/0002-use-a-consistent-user-experience.md)
+* [4. common records layer](adr/doc/0003-common-records-layer.md)
+* [4. Language choices for new development](adr/doc/0004-language-choices-for-new-development.md)
+* [5. Use version control, trunk based development and continuous integration](adr/doc/0005-use-version-control-trunk-based-development-and-continuous-integration.md)
+* [6. All new services should use the same front end toolkit](adr/doc/0006-all-new-services-should-use-the-same-front-end-toolkit.md)
+* [7. Use common CMp component model](adr/doc/0007-use-common-CMp-component-model.md)
+* [8. CMp use shared store for capturing buyer needs](adr/doc/0008-cmp-use-shared-store-for-capturing-buyer-needs.md)
+* [9. Use common API for Agreements, Parties and Documents](adr/doc/0009-use-common-api-for-agreements-parties-and-documents.md)
+* [10. Use shared definition of CMp agreement when building all CMp services](adr/doc/0010-use-shared-definition-of-cmp-agreement-when-building-all-cmp-services.md)
+* [11. Use the same cloud architecture](adr/doc/0011-use-the-same-cloud-architecture.md)
