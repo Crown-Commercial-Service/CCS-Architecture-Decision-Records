@@ -1,6 +1,10 @@
-#1 11- All new services should be built in the same Cloud Architecture 
+# 11. All new services should be built in the same Cloud Architecture 
 
-#2 Context
+## Status
+
+Proposed
+
+## Context
 
 CCS are  building 5 new services for Crown Marketplace (CMp) over the next few months and each
 will need to decide on a range of cloud technologies.
@@ -75,6 +79,7 @@ across CCS services
 ## Discovery and Config
 - Use DNS for service discovery 
 - Environment specific config via Terraform environment variables
+- Optionally use AWS API Gateway for service discovery
 
 ## Availability features
 - implement bulkhead and circuit breaker patterns in Docker containers
