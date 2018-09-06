@@ -4,7 +4,7 @@ Date: 2018-07-23
 
 ## Status
 
-Accepted
+Proposed
 
 ## Context
 
@@ -81,6 +81,7 @@ across CCS services
 ## Discovery and Config
 - Use DNS for service discovery
 - Environment specific config via Terraform environment variables
+- Optionally use AWS API Gateway for service discovery
 
 ## Availability features
 - implement bulkhead and circuit breaker patterns in Docker containers
