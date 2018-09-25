@@ -55,7 +55,7 @@ Assuming a REST based microservice strategy, and complying with CCS technology s
 # Decision
 
 ## Infrastructure configuration code
-Use Terraform to define infrastructure
+- Use Terraform to define infrastructure
 
 ## Containerisation
 - Use Docker containers, deployed by Terraform on AWS ECS - portable, simple
@@ -66,10 +66,12 @@ Use Terraform to define infrastructure
 ## Continuous Integration suite
 - Use AWS CodeBuild, CodePipeline, CodeDeploy to manage build pipeline - cheap, no additional config, SaaS approach
 ## Source Control
-Use CCS GitHub - it [exists](https://github.com/Crown-Commercial-Service); common tech; well understood
+- Use CCS GitHub - it [exists](https://github.com/Crown-Commercial-Service); common tech; well understood
 ## Account management
-Use AWS IAM. Follow [best practice](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
-for account management.  Document and use a consistent template and process for IAM user, group and policy management
+- Use AWS IAM
+- Follow [best practice](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
+for account management.
+- Document and use a consistent template and process for IAM user, group and policy management
 across CCS services
 ## Consistent network design
 - Put layers in different VPCs or Security Groups
@@ -91,10 +93,10 @@ across CCS services
 - (Possble exception -- exception - Gluu is scaled via EC2 manually and may not be Containerisable
 
 ## Logging
-Use CloudWatch for AWS resource monitoring
-Use common log format
-Use transaction tracing through service calls
-Use CloudWatch Logs for log aggregation
+- Use CloudWatch for AWS resource monitoring
+- Use common log format
+- Use transaction tracing through service calls
+- Use CloudWatch Logs for log aggregation
 
 ## Resource management
-Label resources according to a documented tagging model, with tags for layer, service, and where applicable, owning business area.
+- Label resources according to a documented tagging model, with tags for layer, service, and where applicable, owning business area.
