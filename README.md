@@ -29,7 +29,7 @@ Until then we can generate the files via command lines or web tools.
 
 ## Decisions
 
-* [1. use a common cloud provider](doc/adr/0001-use-a-common-cloud-provider.md)
+* [1. Use a common cloud provider](doc/adr/0001-use-a-common-cloud-provider.md)
 * [2. Use a consistent user experience](doc/adr/0002-use-a-consistent-user-experience.md)
 * [4. common records layer](doc/adr/0003-common-records-layer.md)
 * [4. Language choices for new development](doc/adr/0004-language-choices-for-new-development.md)
