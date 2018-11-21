@@ -1,0 +1,46 @@
+
+digraph {
+node [shape=record fontname=Helvetica];
+edge [labelfontname=Times]
+
+    Sourcing [label = "{Sourcing| <a>agreement|<i>agreement items|<s>supplier|<o>offering detail|<c>contract} "]
+    CRM [ label = "{CRM|<a>agreement|<s>supplier|<n>contact} "]
+    DMp [ label = "{DMp|<a>agreement|<s>supplier|<o>offering detail|<i>agreement items|<c>contract} "]
+    CMp [ label = "{CMp|<s>supplier|<o>offering detail|<i>agreement items|<n>contact} "]
+    DPS [ label = "{DPS|<o>offering details} "]
+    SRS [ label = "{SRS|<s>supplier} "]
+    DWarehouse [ label = "{Data Warehouse|<a>agreement|<s>supplier|<sp>spend|<o>offering} "]
+    ContractReport [ label = "{Contract Database|<sp>spend|<o>offering} "]
+    Noticing [label = "{Noticing System| <a>agreement|<o>offering} "]
+    RMI [ label = "{RMI|<sp>spend|other usage data} "]
+    Web [label = "{Web| <a>agreement|<s>supplier|<o>offering detail|<i>agreement items} "]
+
+    agreement_documents [shape=folder]
+
+    add_supplier [shape= note label = "supplier extract"]
+
+    dps_api [shape=rnastab]
+
+    agreement_documents -> Sourcing
+    agreement_documents -> Sourcing
+    CRM -> Sourcing [label = id]
+
+    Sourcing -> CRM
+    Sourcing -> CRM [label = lot]
+
+    CMp -> add_supplier -> CRM
+    SRS -> add_supplier -> CRM
+    DMp -> add_supplier -> CRM
+
+    DPS -> dps_api -> CMp
+    agreement_documents -> CMp:i
+
+    Noticing -> ContractReport
+    RMI -> ContractReport
+
+    { CRM RMI } -> DWarehouse
+
+    CRM -> Web
+    agreement_documents -> Web
+
+}

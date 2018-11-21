@@ -1,0 +1,26 @@
+{
+  "name": "ccs-architecture-decision-records",
+  "version": "1.0.0",
+  "description": "Build for ADRs for CCS",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-shell": "^0.6.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crown-Commercial-Service/CCS-Architecture-Decision-Records.git"
+  },
+  "author": "CCS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Crown-Commercial-Service/CCS-Architecture-Decision-Records/issues"
+  },
+  "homepage": "https://github.com/Crown-Commercial-Service/CCS-Architecture-Decision-Records#readme"
+}
