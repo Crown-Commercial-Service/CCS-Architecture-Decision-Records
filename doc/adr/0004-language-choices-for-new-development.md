@@ -55,6 +55,8 @@ This decision does not apply to services comprised entirely of Software as a Ser
 
 New services will be developed using the languages above unless there is an architectural decision overriding this decision.
 
-We will review this decision in 6 months.
+Decision reviewed in TDDA 10th December 2018. We will review this decision in a further 12 months.
 
 We need to make sure any relevant recruitment, training and procurements (eg via Digital Outcomes and Specialists) takes account of this decision.
+
+Next review: December 2019
