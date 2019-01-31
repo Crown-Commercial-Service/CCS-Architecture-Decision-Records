@@ -41,3 +41,4 @@ Until then we can generate the files via command lines or web tools.
 * [10. Use shared definition of CMp agreement when building all CMp services](doc/adr/0010-use-shared-definition-of-cmp-agreement-when-building-all-cmp-services.md)
 * [11. Use the same cloud architecture](doc/adr/0011-use-the-same-cloud-architecture.md)
 * [12. Use GOV.UK Notify for bulk communication with users](doc/adr/0012-use-govuk-notify-for-bulk-communication-with-users.md)
+* [13. Redirect old services and content](doc/adr/0013-redirect-old-services-and-content.md)
