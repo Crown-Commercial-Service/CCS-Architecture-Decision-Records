@@ -60,3 +60,9 @@ Any CCS-owned source code should be migrated to Git and GitHub.
 We should review existing services to identify the impacts of migrating them to Trunk-based development and Continuous Integration practices.
 
 CCS may need to procure more GitHub user licences.
+
+## Review
+
+Reviewed in TDDA 10th December 2018, and supported, with a further review in six months
+
+Next Review May 2019
