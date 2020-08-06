@@ -1,6 +1,8 @@
 # 15. Security Architecture Principles
 Date: 2019-04-29
 
+Note that CCS Architectural Standards are now mastered in Confluence. The updated version of this standard can be found at: https://crowncommercialservice.atlassian.net/wiki/spaces/AG/pages/585728048/Security+Standards
+
 ## Status
 Approved
 
