@@ -2,6 +2,8 @@
 
 Date: 2018-11-28
 
+Note that CCS Architectural Standards are now mastered in Confluence. The updated version of this standard can be found at: https://crowncommercialservice.atlassian.net/wiki/spaces/AG/pages/585826383/Notify+for+bulk+communication+with+users
+
 ## Status
 
 Accepted
